@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMs</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <fieldset>
+        <legend>Form</legend>
+    <form action="form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="radio" required>Gender</label><br>
+        <input type="radio" id="radio" name="radio">
+        <label for="male">Male </label>
+        <input type="radio" id="radio" name="radio">
+
+        <label for="female">female</label><br><br><br>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <label for="checkbox" >I agree to the terms and conditions</label><br><br>
+       
+        <input type="submit" value="Register">
+    </body>
+</html>
